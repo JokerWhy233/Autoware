@@ -9,6 +9,8 @@
 # For map with many lanes, it is better to have connectedLanesInfo.csv to define which lane is connected to which lane.
 # point.csv, dtlane.csv, lane.csv, node.csv
 
+# ref paper https://www.researchgate.net/publication/332228465_Open-Source_Tool_of_Vector_Map_for_Path_Planning_in_Autoware_Autonomous_Driving_Software
+
 
 ## Tips from Hatem
 # (1) points from different lanes shouldn't be overlapped
