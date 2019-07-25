@@ -9,7 +9,8 @@
 # For map with many lanes, it is better to have connectedLanesInfo.csv to define which lane is connected to which lane.
 # point.csv, dtlane.csv, lane.csv, node.csv
 
-# ref paper https://www.researchgate.net/publication/332228465_Open-Source_Tool_of_Vector_Map_for_Path_Planning_in_Autoware_Autonomous_Driving_Software
+# Please cite this following paper if the code is useful.
+# https://www.researchgate.net/publication/332228465_Open-Source_Tool_of_Vector_Map_for_Path_Planning_in_Autoware_Autonomous_Driving_Software
 
 
 ## Tips from Hatem
