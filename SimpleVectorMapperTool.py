@@ -394,6 +394,8 @@ def writeLine(lines):
 if __name__=="__main__":
 
 	num_lanes = 24+34
+	connectedLaneInfo_file = 'hq_waypoints/connectedLanesInfo.csv'
+	
 	fileNames = []
 	for i in range(0, num_lanes):
 	# 	# temp_name = 'csv/Daegu_Loop'+str(i+1)+'.csv'
@@ -409,7 +411,7 @@ if __name__=="__main__":
 		num_waypoints.append(len(temp_waypoint))
 		waypoints = waypoints + temp_waypoint
 
-	[bid, start, end] = readConnectedLaneCSV('hq_waypoints/connectedLanesInfo.csv')
+	[bid, start, end] = readConnectedLaneCSV(connectedLaneInfo_file)
 	lane_info = [bid, start, end]
 
 	acc_waypoints = []
@@ -437,6 +439,7 @@ if __name__=="__main__":
 
 	lane_list = []
 
+	#lane status update:::need custom update for each lane (waypoint file) 
 	laneStatus = []
 	for i in range(0, 24):
 		laneStatus.append(0)
@@ -446,6 +449,7 @@ if __name__=="__main__":
 
 	for i in range(0, 34):
 		laneStatus.append(4)
+	#end lane status update
 
 	getLane(num_lanes, lane_info, laneStatus)
 
